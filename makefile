@@ -4,7 +4,10 @@ PDFS = $(SRC:.tex=.pdf)
 
 all: compile view
 
-.PHONY: edit
+saveOutside:
+	cp resume.pdf  ~/findingWork/Junhao_Lin_Resume.pdf
+
+.PHONY: edit view saveOutside
 edit: 
 	vim resume.tex
 

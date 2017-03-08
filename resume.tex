@@ -1,54 +1,72 @@
 % !TEX program = xelatex
 
+
 \documentclass{resume}
+\newcommand\quelle[1]{{%
+		\unskip\nobreak\hfil\penalty50
+		\hskip2em\hbox{}\nobreak\hfil #1%
+\parfillskip=0pt \finalhyphendemerits=0 \par}}
+
 %\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{JunHao Lin}
+\name{Junhao Lin(Eric Lin)}
 
 \basicInfo{
-  \email{nameljh1001@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 135-8053-2764} \textperiodcentered\ 
+	\email{ericlin1001@qq.com} \textperiodcentered\ 
+	\phone{(+86) 135-8053-2764} \textperiodcentered\ 
 	%\linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
-  }
+}
 
 \section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{SUN YAT-SEN University (SYSU)}, GuangZhou, China}{2015 -- Present}
+\datedsubsection{\textbf{SUN YAT-SEN University (SYSU)}, Guangzhou, China}{2015 -- Present}
 \textit{Master student} in School of Data and Computer Science (SDCS), expected July 2018
-\datedsubsection{\textbf{SUN YAT-SEN University (SYSU)}, GuangZhou, China}{2011 -- 2015}
+\datedsubsection{\textbf{SUN YAT-SEN University (SYSU)}, Guangzhou, China}{2011 -- 2015}
 \textit{B.S.} in School of Information Science and Technology (SIST)
 
-\section{\faUsers\ Experience/Project}
-\datedsubsection{\textbf{Remote Control}}{Mar. 2016 -- April 2016}
+\section{\faUsers\ Experience}
+\datedsubsection{\textbf{Adaptive Parallel Differential Evolution for PEC}}{Mar. 2015 -- Present}
+% TODO:: Is Maintainer the exact role.
+\role{C++, MPI, Maintainer}{Individual Projects}
+A parallel program, for academic purpose, \url{https://github.com/ericlin1001/AdaptivePDE}
+\begin{itemize}
+	\item Implemented parallel Differential Evolution(DE) algorithm
+	\item Defined a Json format for setting up DE
+	\item Support for adaptively distributing tasks among cores
+\end{itemize}
+
+\datedsubsection{\textbf{Remote Control}}{Mar. 2016 -- Apr. 2016}
+% TODO:: Is Maintainer the exact role.
 \role{Python, Maintainer}{Individual Projects}
 A remote control software, \url{https://github.com/ericlin1001/RemoteControl}
 \begin{itemize}
-  \item Implemented real-time screen capturing
-  \item Support for mouse and keyboard synchronizing
-  \item Support highlighting mouse click position
+	\item Implemented real-time screen capturing
+	\item Support for mouse and keyboard synchronizing
+	\item Support for highlighting mouse click position
 \end{itemize}
 
-\datedsubsection{\textbf{EricOS}}{Jan. 2013 -- Jun. 2013}
-\role{Asm, C, Bat}{Individual Projects}
-An Operating System prototype, \url{https://github.com/ericlin1001/EricOSProject}
+\datedsubsection{\textbf{Eric-OS}}{Jan. 2013 -- Jun. 2013}
+\role{Asm, C, Maintainer}{Individual Projects}
+A basic Operating System(OS), \url{https://github.com/ericlin1001/EricOSProject}
 \begin{itemize}
-	% write a readme for the project.
-  \item Implemented Buddy Memory Management, FAT12 filesystem, Processes Schedule, Interprocess Communication, and IO.
+		% write a readme for the project.
+	\item Implemented Buddy based Memory Management, FAT12 Filesystem
+	\item Implemented Process Scheduling, Inter-process Communication, and IO
 \end{itemize}
 
-\datedsubsection{\textbf{HelpEachOther}}{Jul. 2013 -- Dec. 2013}
+%\datedsubsection{\textbf{Help-Each-Other}}{Jul. 2013 -- Dec. 2013}
 
-\role{Php, Manager}{Team Projects, collaborated with three classmates}
-A web application providing a way to faciliate people help each other, \url{https://github.com/ericlin1001/HelpEachOtherProject}
-\begin{itemize}
-	\item Implemented task management system, i.e. posing tasks\& accept tasks.
-	\item Support chatting between differnet users.
-	\item Ranking list was implemented
-	\item Support for feedback, prosecute
-\end{itemize}
+%\role{Php, Manager}{Team Projects, collaborated with three classmates}
+%A web application providing a way to facilitate people help each other, \url{https://github.com/ericlin1001/HelpEachOtherProject}
+%\begin{itemize}
+%	\item Implemented task management system, i.e. posing and accepting tasks.
+%	\item Support for chatting between different users.
+%\item Ranking list was implemented.
+%\item Support for feedback.
+%\end{itemize}
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
 %An xxx optimized for xxx\cite{verma2015large}
@@ -58,24 +76,30 @@ A web application providing a way to faciliate people help each other, \url{http
 
 \section{\faCogs\ Skills}
 \begin{itemize}[parsep=0.5ex]
-  \item Technologies: C++/C, Python, PHP, MySQL, Asm, Java, HTML, Matlab, Shell Scripting, Git, JSON, XML
-  \item Computer and OS: Linux, Vim, OS installations(Dual \& Triple Boot), BISO setup, LAMP server adminstration
+	\item Technologies: C++/C, Python, Php, MySQL, Asm, Java, HTML, Matlab, Shell Scripting, Git, Json, XML, Clisp, Autoit
+	\item Computer and OS: Linux, Vim, OS installations, BIOS setup, LAMP server administration
 \end{itemize}
 
 \section{\faHeartO\ Honors and Awards}
-%\datedline{GECCO \textit{Parallel Different ial Evolut ion Based on Distributed Cloud Computing Resources for Power Electronic Circuit Optimization}, as the second author}{Jul. 2016}
-\datedline{GECCO \textit{Parallel Differential Evolution Based on Distributed.}, as the second author}{Jul. 2016}
-\datedline{2015-2016 SUN YAT-SEN University Excellent Master scholarship, top 10\%}{Jun. 2016}
 
-\section{\faInfo\ Miscellaneous}
-\begin{itemize}[parsep=0.5ex]
-	\item Blog: \url{https://ericlin1001.github.io}
-	\item GitHub: \url{https://github.com/ericlin1001}
-  \item Languages: English - Fluent, Mandarin - Native speaker
-\end{itemize}
+%\datedline{Published \textit{Parallel Differential Evolution Based on Distributed Cloud Computing Resources for Power Electronic Circuit Optimization} in GECCO '16 Companion}{Jul. 2016}
+%\par Published \textit{Parallel Differential Evolution Based on Distributed Cloud Computing Resources for Power Electronic Circuit Optimization} in GECCO '16 Companion \hfill Jul. 2016 \par
+%#OK: \textit{Publish Parallel Differential Evolution Based on Distributed Cloud Computing Resources for Power Electronic Circuit Optimization} in GECCO '16 Companion \hfill {Jul. 2016}
+\par
+Published \textit{Parallel Differential Evolution Based on Distributed Cloud Computing Resources for Power Electronic Circuit Optimization} in GECCO '16 Companion \quelle{Jul. 2016}
+\datedline{2015-2016 SUN YAT-SEN University Outstanding Graduate Scholarship, top 10\%}{Jun. 2016}
+	\datedline{2011-2012 SUN YAT-SEN The Second Prize Scholarship, top 15\%}{Jun. 2012}
 
-%% Reference
-%\newpage
-%\bibliographystyle{IEEETran}
-%\bibliography{mycite}
-\end{document}
+
+		\section{\faInfo\ Miscellaneous}
+		\begin{itemize}[parsep=0.5ex]
+				%\item Blog: \url{https://ericlin1001.github.io}
+			\item GitHub: \url{https://github.com/ericlin1001}
+			\item Languages: English - Fluent, Mandarin - Native speaker
+		\end{itemize}
+
+		%% Reference
+		%\newpage
+		%\bibliographystyle{IEEETran}
+		%\bibliography{mycite}
+		\end{document}
