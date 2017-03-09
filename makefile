@@ -2,20 +2,24 @@ SRC = $(wildcard *.tex)
 
 PDFS = $(SRC:.tex=.pdf)
 
+#sourceFile=resume
+sourceFile=resumeZh
+
 all: compile view
 
 saveOutside:
 	cp resume.pdf  ~/findingWork/Junhao_Lin_Resume.pdf
+	cp resumeZh.pdf  ~/findingWork/中山大学-林俊浩-简历.pdf
 
 .PHONY: edit view saveOutside
 edit: 
-	vim resume.tex
+	vim $(sourceFile).tex
 
 compile: resume.tex
-	xelatex resume.tex > /dev/null
+	xelatex $(sourceFile).tex > /dev/null
 
 view: resume.pdf
-	evince resume.pdf
+	evince $(sourceFile).pdf
 	
 
 old: clean pdf

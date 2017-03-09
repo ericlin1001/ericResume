@@ -1,0 +1,128 @@
+% !TEX program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+
+\documentclass{resume}
+\newcommand\quelle[1]{{%
+		\unskip\nobreak\hfil\penalty50
+		\hskip2em\hbox{}\nobreak\hfil #1%
+\parfillskip=0pt \finalhyphendemerits=0 \par}}
+
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{林俊浩}
+
+\basicInfo{
+	\email{ericlin1001@qq.com} \textperiodcentered\ 
+	\phone{(+86) 135-8053-2764} 
+	%\textperiodcentered\ 
+	%\linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+}
+
+\section{\faGraduationCap\ 教育背景}
+\datedsubsection{\textbf{中山大学}, 广州}{2015年9月 -- 至今}
+\textit{在读硕士研究生}\  计算机科学与技术, 预计 2018年6月 毕业
+\datedsubsection{\textbf{中山大学}, 广州}{2011年9月 -- 2015年6月}
+%TODO::本科 or 学士
+\textit{学士}\ 计算机科学与技术 
+
+%\section{\faMale\ 校内经历}
+%\datedsubsection{\textbf{中山大学}, 广州}{2015 -- 至今}
+
+\section{\faUsers\ 项目经历}
+\datedsubsection{\textbf{自适应并行差分算法}}{2015年3月 -- 至今}
+% TODO:: Is Maintainer the exact role.
+\role{C++, MPI}{个人学术项目}
+%A parallel program, for academic purpose, \url{https://github.com/ericlin1001/AdaptivePDE}
+一个运行在集群上的并行算法程序, \url{https://github.com/ericlin1001/AdaptivePDE}
+\begin{itemize}
+	%\item Implemented parallel Differential Evolution(DE) algorithm
+	\item 实现差分进化算法的并行化
+	%\item Defined a Json format for setting up DE
+	\item 支持Json格式的参数化
+	%\item Support for adaptively distributing tasks among cores
+	\item 支持在多个CPU核心之间自适应分配任务
+\end{itemize}
+
+\datedsubsection{\textbf{远程控制软件}}{2016年3月 -- 2016年4月}
+% TODO:: Is Maintainer the exact role.
+%\role{Python, Maintainer}{Individual Projects}
+\role{Python}{个人项目}
+%A remote control software, \url{https://github.com/ericlin1001/RemoteControl}
+一个采用Client-Server模式的远程控制软件, \url{https://github.com/ericlin1001/RemoteControl}
+\begin{itemize}
+	%\item Implemented real-time screen capturing
+	\item 实现了实时的屏幕捕捉
+	%\item Support for mouse and keyboard synchronizing
+	\item 支持鼠标和键盘的同步
+	%$\item Support for highlighting mouse click position
+	\item 支持显示鼠标点击的位置
+\end{itemize}
+
+\datedsubsection{\textbf{操作系统开发}}{2013年1月 -- 2013年6月}
+\role{Asm, C}{课程大作业, 个人项目}
+%A basic Operating System(OS), \url{https://github.com/ericlin1001/EricOSProject}
+一个基本的操作系统, \url{https://github.com/ericlin1001/EricOSProject}
+\begin{itemize}
+		% write a readme for the project.
+%	\item Implemented Buddy based Memory Management, FAT12 Filesystem
+	\item 实现了基于Buddy的内存管理, FAT12文件系统
+%	\item Implemented Process Scheduling, Inter-process Communication, and IO
+	\item 实现了进程调度, 进程间通信, 输入输出的API
+\end{itemize}
+
+%\datedsubsection{\textbf{Help-Each-Other}}{Jul. 2013 -- Dec. 2013}
+
+%\role{Php, Manager}{Team Projects, collaborated with three classmates}
+%A web application providing a way to facilitate people help each other, \url{https://github.com/ericlin1001/HelpEachOtherProject}
+%\begin{itemize}
+%	\item Implemented task management system, i.e. posing and accepting tasks.
+%	\item Support for chatting between different users.
+%\item Ranking list was implemented.
+%\item Support for feedback.
+%\end{itemize}
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ IT 技能}
+\begin{itemize}[parsep=0.5ex]
+	\item 编程语言: C++/C, Python, Php, Asm, Java, Matlab
+	\item 其它技能: Linux, Git, MySQL, Json, HTML, XML, Autoit, LAMP
+\end{itemize}
+
+\section{\faHeartO\ 获奖情况}
+
+%\datedline{Published \textit{Parallel Differential Evolution Based on Distributed Cloud Computing Resources for Power Electronic Circuit Optimization} in GECCO '16 Companion}{Jul. 2016}
+%\par Published \textit{Parallel Differential Evolution Based on Distributed Cloud Computing Resources for Power Electronic Circuit Optimization} in GECCO '16 Companion \hfill Jul. 2016 \par
+%#OK: \textit{Publish Parallel Differential Evolution Based on Distributed Cloud Computing Resources for Power Electronic Circuit Optimization} in GECCO '16 Companion \hfill {Jul. 2016}
+\par
+在GECCO '16 Companion发表了论文: \textit{Parallel Differential Evolution Based on Distributed Cloud Computing Resources for Power Electronic Circuit Optimization} \quelle{2016年7月}
+\datedline{2015-2016 中山大学优秀研究生奖学金, 前 10\%}{2016年6月}
+	\datedline{2011-2012 中山大学优秀学生二等奖学金, 前 15\%}{2012年6月}
+	\datedline{中山大学镇泰奖学金}{2012年6月}
+
+
+		\section{\faInfo\ 其它}
+		\begin{itemize}[parsep=0.5ex]
+			\item 职务: 班长(2015年-至今), 助教(2016年-2017年)
+			\item 技术博客: \url{https://ericlin1001.github.io}
+			\item GitHub: \url{https://github.com/ericlin1001}
+			\item 语言: 英语 - 熟练(CET-6 553分)
+			\item 爱好: 阅读, 滑板, 乒乓球, 跑步
+		\end{itemize}
+
+		%% Reference
+		%\newpage
+		%\bibliographystyle{IEEETran}
+		%\bibliography{mycite}
+		\end{document}
