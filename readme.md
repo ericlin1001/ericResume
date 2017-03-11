@@ -29,3 +29,10 @@ into
 sourceFile=resume
 #sourceFile=resumeZh
 ```
+
+# Some tricks to check the tex files.
+1. Deleting unwanted consecutive space
+	In vim, run `:%s/  / /gc`
+
+2. In chinese resume template, replace all fill-width comma, i.e. `，`, with half-width comma, i.e. `,` 
+	In vim, run `:%s/，/,/gc`
