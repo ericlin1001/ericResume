@@ -16,7 +16,8 @@ edit:
 	vim $(sourceFile).tex
 
 compile: resume.tex
-	xelatex $(sourceFile).tex > /dev/null
+	#xelatex $(sourceFile).tex > /dev/null
+	xelatex $(sourceFile).tex 
 
 view: resume.pdf
 	evince $(sourceFile).pdf

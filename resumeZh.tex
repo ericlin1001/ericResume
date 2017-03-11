@@ -24,6 +24,9 @@
 	%\textperiodcentered\ 
 	%\linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
 }
+\basicInfo{
+	\faPaw\ GitHub: \url{https://github.com/ericlin1001}
+}
 
 \section{\faGraduationCap\ 教育背景}
 \datedsubsection{\textbf{中山大学}, 广州}{2015年9月 -- 至今}
@@ -36,33 +39,44 @@
 %\datedsubsection{\textbf{中山大学}, 广州}{2015 -- 至今}
 
 \section{\faUsers\ 项目经历}
-\datedsubsection{\textbf{自适应并行差分算法}}{2015年3月 -- 至今}
+\datedsubsection{\textbf{自适应并行差分算法}}{2015年3月 -- 2016年7月}
 % TODO:: Is Maintainer the exact role.
 \role{C++, MPI}{个人学术项目}
 %A parallel program, for academic purpose, \url{https://github.com/ericlin1001/AdaptivePDE}
-一个运行在集群上的并行算法程序, \url{https://github.com/ericlin1001/AdaptivePDE}
+一个运行在集群上的并行算法程序, 用来解决功率电子优化问题(PEC), \url{https://github.com/ericlin1001/AdaptivePDE}
 \begin{itemize}
-	%\item Implemented parallel Differential Evolution(DE) algorithm
-	\item 实现差分进化算法的并行化
-	%\item Defined a Json format for setting up DE
-	\item 支持Json格式的参数化
-	%\item Support for adaptively distributing tasks among cores
-	\item 支持在多个CPU核心之间自适应分配任务
+		%\item Implemented parallel Differential Evolution(DE) algorithm
+	\item 实现差分进化算法的并行化, 并行加速比(speedup)约等于CPU核心个数的1/2
+		%\item Defined a Json format for setting up DE
+	\item 支持在多个CPU核心之间自适应分配任务, 高效利用了CPU核心的资源
+	\item 提出了一种Json格式的参数表示, 使得算法参数设置有一个统一的标准
+		%\item Support for adaptively distributing tasks among cores
+	\item 在GECCO '16 Companion发表了相应论文: \textit{Parallel Differential Evolution Based on Distributed Cloud Computing Resources for Power Electronic Circuit Optimization} %\quelle{2016年7月}
 \end{itemize}
 
-\datedsubsection{\textbf{远程控制软件}}{2016年3月 -- 2016年4月}
-% TODO:: Is Maintainer the exact role.
-%\role{Python, Maintainer}{Individual Projects}
-\role{Python}{个人项目}
-%A remote control software, \url{https://github.com/ericlin1001/RemoteControl}
-一个采用Client-Server模式的远程控制软件, \url{https://github.com/ericlin1001/RemoteControl}
+%\datedsubsection{\textbf{远程控制软件}}{2016年3月 -- 2016年4月}
+%\role{Python}{个人项目}
+%一个采用Client-Server模式的远程控制软件, \url{https://github.com/ericlin1001/RemoteControl}
+%\begin{itemize}
+%	\item 实现了实时的屏幕捕捉, 达到人眼无法分辨的延迟
+%	\item 支持鼠标和键盘的同步
+%\end{itemize}
+
+%\datedsubsection{\textbf{Help-Each-Other}}{Jul. 2013 -- Dec. 2013}
+\datedsubsection{\textbf{互帮互助系统开发}}{Jul. 2013 -- Dec. 2013}
+%\role{Php, Manager}{Team Projects, collaborated with three classmates}
+\role{Php, 负责人}{团队项目, 和其中三个同学合作开发}
+%A web application providing a way to facilitate people help each other, \url{https://github.com/ericlin1001/HelpEachOtherProject}
+一个web端应用, 支持用户发布需求和帮助它人, \url{https://github.com/ericlin1001/HelpEachOtherProject}
 \begin{itemize}
-	%\item Implemented real-time screen capturing
-	\item 实现了实时的屏幕捕捉
-	%\item Support for mouse and keyboard synchronizing
-	\item 支持鼠标和键盘的同步
-	%$\item Support for highlighting mouse click position
-	\item 支持显示鼠标点击的位置
+		%	\item Implemented task management system, i.e. posing and accepting tasks.
+	\item 实现了任务的发布和接收系统, 使用户可以随时发布需求和帮助他人	
+
+		%	\item Support for chatting between different users.
+	\item 实现了完整线上聊天系统
+		%\item Ranking list was implemented.
+	\item 支持查看用户实时排名, 意见反馈
+		%\item Support for feedback.
 \end{itemize}
 
 \datedsubsection{\textbf{操作系统开发}}{2013年1月 -- 2013年6月}
@@ -71,27 +85,19 @@
 一个基本的操作系统, \url{https://github.com/ericlin1001/EricOSProject}
 \begin{itemize}
 		% write a readme for the project.
-%	\item Implemented Buddy based Memory Management, FAT12 Filesystem
-	\item 实现了基于Buddy的内存管理, FAT12文件系统
-%	\item Implemented Process Scheduling, Inter-process Communication, and IO
-	\item 实现了进程调度, 进程间通信, 输入输出的API
+		%	\item Implemented Buddy based Memory Management, FAT12 Filesystem
+	\item 实现了基于Buddy的内存管理, 支持内存动态分配 
+	\item 支持FAT12文件系统的文件读入
+		%	\item Implemented Process Scheduling, Inter-process Communication, and IO
+	\item 实现了进程调度, 进程间通信, 标准输入输出
+	\item 此代码被老师作为之后实验课的标准, 并被老师邀请上去代为讲解
 \end{itemize}
 
-%\datedsubsection{\textbf{Help-Each-Other}}{Jul. 2013 -- Dec. 2013}
-
-%\role{Php, Manager}{Team Projects, collaborated with three classmates}
-%A web application providing a way to facilitate people help each other, \url{https://github.com/ericlin1001/HelpEachOtherProject}
-%\begin{itemize}
-%	\item Implemented task management system, i.e. posing and accepting tasks.
-%	\item Support for chatting between different users.
-%\item Ranking list was implemented.
-%\item Support for feedback.
-%\end{itemize}
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
 %An xxx optimized for xxx\cite{verma2015large}
 %\begin{itemize}
-%  \item main contribution
+% \item main contribution
 %\end{itemize}
 
 \section{\faCogs\ IT 技能}
@@ -106,19 +112,18 @@
 %\par Published \textit{Parallel Differential Evolution Based on Distributed Cloud Computing Resources for Power Electronic Circuit Optimization} in GECCO '16 Companion \hfill Jul. 2016 \par
 %#OK: \textit{Publish Parallel Differential Evolution Based on Distributed Cloud Computing Resources for Power Electronic Circuit Optimization} in GECCO '16 Companion \hfill {Jul. 2016}
 \par
-在GECCO '16 Companion发表了论文: \textit{Parallel Differential Evolution Based on Distributed Cloud Computing Resources for Power Electronic Circuit Optimization} \quelle{2016年7月}
 \datedline{2015-2016 中山大学优秀研究生奖学金, 前 10\%}{2016年6月}
 	\datedline{2011-2012 中山大学优秀学生二等奖学金, 前 15\%}{2012年6月}
-	\datedline{中山大学镇泰奖学金}{2012年6月}
+		%\datedline{中山大学镇泰奖学金}{2012年6月}
 
 
 		\section{\faInfo\ 其它}
 		\begin{itemize}[parsep=0.5ex]
 			\item 职务: 班长(2015年-至今), 助教(2016年-2017年)
-			\item 技术博客: \url{https://ericlin1001.github.io}
-			\item GitHub: \url{https://github.com/ericlin1001}
+				%\item 技术博客: \url{https://ericlin1001.github.io}
+				%	\item GitHub: \url{https://github.com/ericlin1001}
 			\item 语言: 英语 - 熟练(CET-6 553分)
-			\item 爱好: 阅读, 滑板, 乒乓球, 跑步
+				%\item 爱好: 阅读, 滑板, 乒乓球, 跑步
 		\end{itemize}
 
 		%% Reference
