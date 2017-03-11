@@ -2,8 +2,8 @@ SRC = $(wildcard *.tex)
 
 PDFS = $(SRC:.tex=.pdf)
 
-sourceFile=resume
-#sourceFile=resumeZh
+#sourceFile=resume
+sourceFile=resumeZh
 
 all: compile view
 
