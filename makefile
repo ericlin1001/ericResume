@@ -7,6 +7,9 @@ sourceFile=resumeZh
 
 all: compile view
 
+spellCheck:resume.tex
+	aspell -t -c resume.tex
+
 saveOutside:
 	cp resume.pdf  ~/findingWork/Junhao_Lin_Resume.pdf
 	cp resumeZh.pdf  ~/findingWork/中山大学-林俊浩-简历.pdf
