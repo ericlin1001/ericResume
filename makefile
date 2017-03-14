@@ -2,8 +2,8 @@ SRC = $(wildcard *.tex)
 
 PDFS = $(SRC:.tex=.pdf)
 
-sourceFile=resume
-#sourceFile=resumeZh
+#sourceFile=resume
+sourceFile=resumeZh
 
 all: compile view
 
@@ -13,6 +13,8 @@ spellCheck:resume.tex
 saveOutside:
 	cp resume.pdf  ~/findingWork/Junhao_Lin_Resume.pdf
 	cp resumeZh.pdf  ~/findingWork/中山大学-林俊浩-简历.pdf
+	pdfunite resume.pdf resumeZh.pdf resumeEnZh.pdf
+	cp resumeEnZh.pdf  ~/findingWork/Junhao_Lin_Resume_en_zh.pdf
 
 .PHONY: edit view saveOutside
 edit: 
